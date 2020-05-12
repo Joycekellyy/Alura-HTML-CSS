@@ -1,0 +1,40 @@
+body {
+    font: normal 15pt Arial;
+    background-image: url(https://images.pexels.com/photos/1713953/pexels-photo-1713953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: 100vw 100vh;
+    text-align: center;
+    height: 100vh;
+}
+
+.menu {
+    background-color: #B5D5EB;
+    border-radius: 10px;
+}
+
+.menu li {
+    list-style: none
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: #424EFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.subtítulo-site,
+.título-site {
+    color:rgba(0, 0, 0, 0.801);
+}
+
+.subtítulo-site {
+    font-style: oblique;
+}
+
