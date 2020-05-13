@@ -5,7 +5,7 @@
 }
 body {
     font: normal 10pt Arial;
-    background-color: #63A68D;
+    background-color: #F2A2B1;
     background-size: 100vw 100vh;
     text-align: center;
     height: 100vh;
@@ -36,7 +36,7 @@ header {
 }
 
 .menu {
-    background-color: rgb(57, 128, 103);
+    background-color: #F288A4;
     border-radius:10px;
     position: fixed;
     width: 100vw;
@@ -64,7 +64,7 @@ a:hover {
 
 .subtítulo-site,
 .título-site {
-    color: wheat;
+    color:white;
 }
 
 .título-site {
@@ -78,4 +78,8 @@ a:hover {
 .img-portfolio {
     height: 180px;
     width: 180px;
+}
+
+.grade-cont {
+    background-color: #F288A4;
 }
