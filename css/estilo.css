@@ -4,16 +4,44 @@
     box-sizing: border-box;
 }
 body {
-    font: normal 15pt Arial;
-    background-color: rgba(9, 58, 64, 0.925);
+    font: normal 10pt Arial;
+    background-color: #63A68D;
     background-size: 100vw 100vh;
     text-align: center;
     height: 100vh;
 }
 
+@media (min-width: 400px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+header {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+}
+
 .menu {
-    background-color: rgba(1, 28, 64, 0.795);
-    border-radius: 10px;
+    background-color: rgb(57, 128, 103);
+    border-radius:10px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    
 }
 
 .menu li {
@@ -26,8 +54,8 @@ body {
 }
 
 a {
-    color: #424EFF;
     text-decoration: none;
+    color: black;
 }
 
 a:hover {
@@ -36,10 +64,18 @@ a:hover {
 
 .subtítulo-site,
 .título-site {
-    color:rgba(0, 0, 0, 0.801);
+    color: wheat;
+}
+
+.título-site {
+    font-size: 3em;
 }
 
 .subtítulo-site {
     font-style: oblique;
 }
 
+.img-portfolio {
+    height: 180px;
+    width: 180px;
+}
