@@ -2,15 +2,16 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* Retirar o padrão css */
 }
 body {
-    font: normal 10pt Arial;
+    /* font: normal 10pt Arial; */
+    font-family: 'Poppins', sans-serif;
     background-color: #F2A2B1;
     background-size: 100vw 100vh;
-    text-align: center;
     height: 100vh;
 }
-
+/* Resoluções da tela */
 @media (min-width: 400px) {
     body {
         font-size: 16px;
@@ -23,16 +24,52 @@ body {
     }
 }
 
+/* Escrita */
 header {
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
+.título {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: ease 1s animaçãoTítulo forwards;
+}
+
+.contato h2 {
+    color: white;
+    font-size: 1.5em;;
+}
+
+@keyframes animaçãoTítulo {
+    to {
+        transform: scale(1) translate(0);
+        opacity: 1;
+    }
+}
+
+.portifólio h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    margin-bottom: 0.9em;
+    font-size: 2.1em;
+}
+/* Configurações do menu */
 .menu a {
     display: block;
     padding: 10px 20px;
+    border-radius: 7px;
+    transition: background 500ms;
+
+}
+
+.menu a:active,
+.menu a:hover {
+    background-color:rgb(209, 117, 141);
+    color: white;
 }
 
 .menu {
@@ -41,6 +78,7 @@ header {
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
     
 }
 
@@ -53,15 +91,15 @@ header {
     justify-content: space-around;
 }
 
+
+/* Configuração dos links */
 a {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
+/* Confirações dos títulos */
 .subtítulo-site,
 .título-site {
     color:white;
@@ -75,11 +113,65 @@ a:hover {
     font-style: oblique;
 }
 
+/* Confirações das imagens  */
 .img-portfolio {
     height: 180px;
-    width: 180px;
+    width: 240px;
+    object-fit: cover;
+    /* object-position: ; */
+    border-radius: 10px;
+    transition: transform 240ms;
 }
 
-.grade-cont {
+.img-portfolio:active,
+.img-portfolio:hover {
+    transform: scale(1.1);
+}
+
+.portifólio figure {
+    text-align: center;
+}
+
+.grade-contato {
     background-color: #F288A4;
+    text-align: center;
+}
+
+.portifólio {
+    padding: 2em;
+}
+
+/* Configurações das colunas */
+.portifólio .grid {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .portifólio .grid {
+        grid-template-columns: 240px 240px;
+    }
+}
+
+@media (min-width: 880px) {
+    .portifólio .grid {
+        grid-template-columns: 240px 240px;
+        align-content: center;
+        height: calc(100vh - 8em - 48px);
+    }
+}
+
+/* Configurações dos ícones */
+.contato a {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    transition: text-shadow 230ms;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 3px 3px  rgb(209, 117, 141);
 }
