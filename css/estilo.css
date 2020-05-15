@@ -7,10 +7,13 @@
 body {
     /* font: normal 10pt Arial; */
     font-family: 'Poppins', sans-serif;
-    background-color: #F2A2B1;
-    background-size: 100vw 100vh;
+    background-color: #CA96D9;
+    background-size: 100vw ;
     height: 100vh;
+    
+    
 }
+
 /* Resoluções da tela */
 @media (min-width: 400px) {
     body {
@@ -31,6 +34,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url(https://i.pinimg.com/originals/05/5b/f5/055bf5050b4d22254e096920f9bef5ce.gif);
 }
 
 .título {
@@ -51,12 +55,14 @@ header {
     }
 }
 
-.portifólio h2 {
-    font-family: 'Libre Baskerville', serif;
+.portfólio h2 {
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Poppins', sans-serif;
     color: white;
     margin-bottom: 0.9em;
     font-size: 2.1em;
 }
+
 /* Configurações do menu */
 .menu a {
     display: block;
@@ -68,12 +74,12 @@ header {
 
 .menu a:active,
 .menu a:hover {
-    background-color:rgb(209, 117, 141);
+    background-color:rgb(154, 98, 184);
     color: white;
 }
 
 .menu {
-    background-color: #F288A4;
+    background-color: #B379D9;
     border-radius:10px;
     position: fixed;
     width: 100vw;
@@ -98,11 +104,10 @@ a {
     color: black;
 }
 
-
 /* Confirações dos títulos */
 .subtítulo-site,
 .título-site {
-    color:white;
+    color: rgb(129, 47, 173);
 }
 
 .título-site {
@@ -128,34 +133,34 @@ a {
     transform: scale(1.1);
 }
 
-.portifólio figure {
+.portfólio figure {
     text-align: center;
 }
 
 .grade-contato {
-    background-color: #F288A4;
+    background-color: #B379D9;
     text-align: center;
 }
 
-.portifólio {
+.portfólio {
     padding: 2em;
 }
 
 /* Configurações das colunas */
-.portifólio .grid {
+.portfólio .grid {
     display: grid;
     gap: 1em;
     justify-content: center;
 }
 
 @media (min-width: 600px) {
-    .portifólio .grid {
+    .portfólio .grid {
         grid-template-columns: 240px 240px;
     }
 }
 
 @media (min-width: 880px) {
-    .portifólio .grid {
+    .portfólio .grid {
         grid-template-columns: 240px 240px;
         align-content: center;
         height: calc(100vh - 8em - 48px);
@@ -173,5 +178,6 @@ a {
 .contato a:active,
 .contato a:hover {
     text-decoration: none;
-    text-shadow: 3px 3px  rgb(209, 117, 141);
+    text-shadow: 3px 3px  rgb(146, 37, 204);
 }
+
