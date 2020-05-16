@@ -55,6 +55,7 @@ header {
     }
 }
 
+.sobre h2,
 .portfólio h2 {
     /* font-family: 'Libre Baskerville', serif; */
     font-family: 'Poppins', sans-serif;
@@ -62,6 +63,28 @@ header {
     margin-bottom: 0.9em;
     font-size: 2.1em;
 }
+
+.sobre p {
+    text-indent: 3em;
+    margin-bottom: 1.5em;
+    color: white;
+}
+
+.sobre a {
+    color: rgb(113, 40, 161);
+}
+
+.sobre a:hover {
+    text-decoration: underline;
+}
+@media (min-width: 1200px) {
+    container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 /* Configurações do menu */
 .menu a {
@@ -142,8 +165,40 @@ a {
     text-align: center;
 }
 
+.sobre {
+    margin-top: 4em;
+    margin-left: 2em;
+}
+
 .portfólio {
     padding: 2em;
+}
+
+.sobre .profile {
+    float: top;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.sobre .profile:active,
+.sobre .profile:hover {
+    animation: 3s animaçãoPicture infinite;
+}
+
+@keyframes animaçãoPicture {
+    to {
+        transform: rotate(180deg);
+    }
+    from {
+        transform: rotate(-180deg);
+    } 
+}
+
+@media (min-width: 672px) {
+    .sobre .profile {
+        float: left;
+        margin-right: 3em;
+        margin-left: 3em;
+    }
 }
 
 /* Configurações das colunas */
@@ -180,4 +235,3 @@ a {
     text-decoration: none;
     text-shadow: 3px 3px  rgb(146, 37, 204);
 }
-
