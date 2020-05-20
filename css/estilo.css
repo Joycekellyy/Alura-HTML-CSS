@@ -151,9 +151,20 @@ a {
     transition: transform 240ms;
 }
 
+figcaption {
+    padding-top: 0.7em;
+}
+
 .img-portfolio:active,
 .img-portfolio:hover {
-    transform: scale(1.1);
+    animation: 0.5s animationPicturies forwards;
+}
+
+@keyframes animationPicturies {
+    100% {
+        transform: scale(1.1);
+        box-shadow: 12px 12px 3px rgba(0, 0, 0, 0.336);
+    }
 }
 
 .portfólio figure {
@@ -202,7 +213,7 @@ a {
 /* Configurações das colunas */
 .portfólio .grid {
     display: grid;
-    gap: 1em;
+    gap: 2em;
     justify-content: center;
 }
 
