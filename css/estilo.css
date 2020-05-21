@@ -1,17 +1,13 @@
+/* Retirar o padrão css */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* Retirar o padrão css */
+    
 }
 body {
-    /* font: normal 10pt Arial; */
     font-family: 'Poppins', sans-serif;
     background-color: #CA96D9;
-    background-size: 100vw ;
-    height: 100vh;
-    
-    
 }
 
 /* Resoluções da tela */
@@ -34,7 +30,38 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(https://i.pinimg.com/originals/05/5b/f5/055bf5050b4d22254e096920f9bef5ce.gif);
+    background-size: 230vw;
+    height: 60vh;
+    background-position: center;
+    background-image: url(https://i.pinimg.com/originals/29/57/d9/2957d99bf220c6a37bac7702959736cc.gif);
+}
+/*  GIFS
+https://i.pinimg.com/originals/05/5b/f5/055bf5050b4d22254e096920f9bef5ce.gif
+https://media.giphy.com/media/cM2jGL4t1azcHV83Ba/giphy.gif
+https://i.giphy.com/media/3ov9k1173PdfJWRsoE/giphy.webp
+https://i.pinimg.com/originals/02/05/78/0205780554435370d8ab73a29c8da92f.gif
+https://i.pinimg.com/originals/82/36/03/8236033ffb44963dbe1dcc5cad825151.gif
+https://i.pinimg.com/originals/29/57/d9/2957d99bf220c6a37bac7702959736cc.gif
+*/
+
+@media (min-width: 830px) {
+    header {
+        background-size: 100vw ;
+        height: 70vh;
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        background-size: 280vw;
+        height: 70vh;
+    }
 }
 
 .título {
@@ -77,6 +104,7 @@ header {
 .sobre a:hover {
     text-decoration: underline;
 }
+
 @media (min-width: 1200px) {
     container {
         max-width: 1200px;
@@ -130,7 +158,7 @@ a {
 /* Confirações dos títulos */
 .subtítulo-site,
 .título-site {
-    color: rgb(129, 47, 173);
+    color:  rgb(113, 40, 161);
 }
 
 .título-site {
